@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <link rel="stylesheet" href="/normalize.css"/>
+    <link rel="stylesheet" href="/skeleton.css" />
+    <title>budgtr</title>
+    <a href="/budgtr">Back to Index</a>
+  </head>
+  <body>
+    <h1>Budgtr All</h1>
+    <div class="container"></div>
+    <ul>
+      <% for(let i = 0; i < budget.length; i++) { %>
+        <li><a href="/budget/<%=i%>"><%= budget[i].name %></a></li>
+      <% } %>
+    </ul>
+  
+ 
+  </body>
+</html>
+
